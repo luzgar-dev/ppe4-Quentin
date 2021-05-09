@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PPE4_Damien.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Bienvenue sur ReserveRepas" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Label Text="Réservez votre repas du midi" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Veuillez d'abord vous connecter avant d'effectuer votre réservation" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+
+        </Label>
+
+
+        <Button Text="Authentification" BackgroundColor="Blue" Clicked="NavigateButton_OnClicked">
+        </Button>
+    </StackLayout>
+
+</ContentPage>

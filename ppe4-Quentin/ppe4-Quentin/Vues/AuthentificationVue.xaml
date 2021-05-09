@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PPE4Damien.Vues.AuthentificationVue">
+     
+        
+          
+       <!-- <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Authentification" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Label Text="Veuillez vous identifier via le formulaire ci dessous" FontSize="Title" Padding="30,10,30,10"/>
+           
+            <Label FontSize="16" Padding="30,24,30,0">
+
+            </Label>
+
+            <Entry Placeholder="Nom" />
+
+            <Entry Placeholder="Mot de passe" />
+
+        <Button Text="Valider" Clicked="Valider_OnClicked">
+        </Button>
+
+
+
+
+
+
+    </StackLayout>-->
+
+    <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
+        <BoxView HeightRequest="10"/>
+        <Image HorizontalOptions="Center" WidthRequest="300" Source="maco.jpg"/>
+        <Frame BackgroundColor="#BF043055" HasShadow="False">
+            <StackLayout Orientation="Vertical" Spacing="10">
+                <Entry x:Name="Email" Text="{Binding Email}" Placeholder="Email"   
+                           PlaceholderColor="White" HeightRequest="40"   
+                           Keyboard="Email"  
+                           TextColor="White"/>
+                <Entry x:Name="Password" Text="{Binding Password}" Placeholder="Nom"   
+                           PlaceholderColor="White" HeightRequest="40"   
+                           IsPassword="True"  
+                           TextColor="White"/>
+            </StackLayout>
+        </Frame>
+        <Button Command="{Binding SubmitCommand}" Text="Login" TextColor="White"  
+                    FontAttributes="Bold" FontSize="Large" HorizontalOptions="FillAndExpand"  
+                    BackgroundColor="#088da5" />
+    </StackLayout>
+
+</ContentPage>
